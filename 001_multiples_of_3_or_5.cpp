@@ -1,0 +1,88 @@
+/*******************************************************************************
+* Problem 1 : Multiples of 3 or 5                                              *
+*                                                                              *
+* If we list all the natural numbers below 10 that are multiples of 3 or 5,    *
+* we get 3, 5, 6 and 9. The sum of these multiples is 23.                      *
+*                                                                              *
+* Find the sum of all the multiples of 3 or 5 below 1000.                      *
+*******************************************************************************/
+
+#include <iostream>
+#include <chrono>
+#include <cstdlib>
+#include <vector>
+
+#define THREE   3
+#define FIVE    5
+#define FIFTEEN 15
+
+int sum_of_multiples_of_m_below_n(const int m, const int n)
+{
+    int sum = 0;
+    for (int k = m; k < n; k+=m)
+    {
+        sum += k;
+    }
+
+    return sum;
+}
+
+//> First Method : sum multiples of 3 and 5 minus multiples of 3*5 = 15
+int first_method(const int n)
+{
+    int sum = 0;
+    sum += sum_of_multiples_of_m_below_n(THREE, n);
+    sum += sum_of_multiples_of_m_below_n(FIVE, n);
+    sum -= sum_of_multiples_of_m_below_n(FIFTEEN, n);
+
+    return sum;
+}
+
+//> Second Method : the pattern
+int second_method(const int n)
+{
+    int sum = 0;
+
+    const std::vector<int> pattern = {3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30};
+
+    // to be continued
+
+    return sum;
+}
+
+
+
+int main (int argc, char *argv[])
+{
+    /* Input processing */
+    if (argc != 2)
+    {
+        std::cout << "Usage : ./001_multiples_of_3_or_5 n" << std::endl;
+        return -1;
+    }
+
+    const int n = atoi(argv[1]);
+
+    /* Variable declaration */
+    int sum_1 = 0;
+    int sum_2 = 0;
+
+    /* First method */
+    auto start = std::chrono::steady_clock::now();
+    sum_1 = first_method(n);
+    auto end = std::chrono::steady_clock::now();
+    auto cpt_1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+
+    /* First method */
+    start = std::chrono::steady_clock::now();
+    sum_2 = second_method(n);
+    end = std::chrono::steady_clock::now();
+    auto cpt_2 = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+  
+
+    /* Display of results */
+    std::cout << "Result 1 : " << sum_1 << " | Computation Time : " << cpt_1 << " ns" << std::endl;
+    std::cout << "Result 2 : " << sum_2 << " | Computation Time : " << cpt_2 << " ns" << std::endl;
+
+    return 0;
+}

@@ -1,0 +1,33 @@
+Documentation about Problem 1 : Multiples of 3 or 5
+
+# Explanation [EN]
+
+    In comming
+
+# Explication [FR]
+
+* Première méthode :
+
+    - calculer la somme des multiples de 3
+    - calculer la somme des multiples de 5
+    - calculer la somme des multiples de 15 (cela regroupe les multiples communs qu'il faut soutraire 
+                                             une fois à la somme globale car il ne faut pas les compter en double)
+    - sommer les 3 résultats
+
+* Deuxième méthode :
+
+    Le pattern de la suite des multiples de 3 ou de 5 est la même de 1-30, 31-60, ..., 121-150, ...
+    pattern : {3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30}
+    Il y a 14 nombres qui sont multiples de 3 ou 5.
+    Donc pour calculer la somme des nombres qui sont multiples de 3 ou 5 en dessous de 1000,
+    il suffit de calculer :
+    - calculer le résultat de la division euclidienne de 1000 par 30 (33*30 + 10)
+    - faire 14 * (30 + 60 + 90 + 120 + ... + 960)
+    - faire 33 * (3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 + 20 + 21 + 24 + 25 + 27 + 30)
+    - et enfin calculer le reste (993 + 995 + 996 + 999)
+    - sommer le tout
+
+# Commands 
+
+Compilation : g++ 001_multiples_of_3_or_5.cpp -o 001_multiples_of_3_or_5
+Execution : ./001_multiples_of_3_or_5 1000
