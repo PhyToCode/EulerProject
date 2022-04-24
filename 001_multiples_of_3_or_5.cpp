@@ -15,6 +15,7 @@
 #define THREE   3
 #define FIVE    5
 #define FIFTEEN 15
+#define THIRTY  30
 
 int sum_of_multiples_of_m_below_n(const int m, const int n)
 {
@@ -41,13 +42,33 @@ int first_method(const int n)
 //> Second Method : the pattern
 int second_method(const int n)
 {
-    int sum = 0;
-
+    int sum_1 = 0;
+    int sum_2 = 0;
+    int sum_3 = 0;
     const std::vector<int> pattern = {3, 5, 6, 9, 10, 12, 15, 18, 20, 21, 24, 25, 27, 30};
+    const int size_pattern = int(pattern.size());
 
-    // to be continued
+    int q = n / THIRTY;
+    int r = n % THIRTY;
 
-    return sum;
+    for (int k = 1; k < q; k++)
+    {
+        sum_1 += k;
+    }
+    sum_1 *= size_pattern * THIRTY;
+
+    for (int k = 0; k < size_pattern; k++)
+    {
+        int value = pattern [k];
+        sum_2 += value;
+        if (value < r)
+        {
+            sum_3 += q * THIRTY + value;
+        }
+    }
+    sum_2 *= q;
+
+    return sum_1 + sum_2 + sum_3;
 }
 
 
