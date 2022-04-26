@@ -15,19 +15,76 @@
 #include <cstdlib>
 #include <vector>
 
+#define FOUR_MILLIONS 4000000
+
+long long int fibonacci (int n)
+{
+    long long int fn_1 = 0; 
+    long long int fn = 1;
+    long long int fnp1 = 1;
+
+    for (int k = 2; k < n; k++)
+    {
+        fnp1 = fn_1 + fn;
+        fn_1 = fn;
+        fn = fnp1;
+    }
+
+    return fnp1;
+}
+
+std::vector<long long int> fibonacci_vector (int n)
+{
+    std::vector<long long int> fibo = {0, 1, 1};
+    int size;
+
+    for (int k = 2; k < n; k++)
+    {
+        size = fibo.size();
+        fibo.push_back(fibo[size - 1] + fibo[size - 2]);
+    }
+
+    return fibo;
+}
+
 int main (int argc, char *argv[])
 {
     /* Input processing */
-    if (argc != 1)
+    if (argc != 2)
     {
-        std::cout << "Usage : ./002_even_fibonacci_numbers" << std::endl;
+        std::cout << "Usage : ./002_even_fibonacci_numbers n" << std::endl;
         return -1;
     }
 
-    // écrire la fonction (calculer la suite de fibonnaci) de manière itérative
-    // Si on veut le stocker le minimum de valeurs :
-    // Stocker dans un tableau les 3 derniers nombres de fibonacci
-    // Sotcker la somme (incrémenter les nombres pairs au fur et à mesure)
+    const int n = atoi(argv[1]);
+
+    /* Variable declaration */
+    long long int result_1 = 0;
+    std::vector<long long int> result_vector;
+
+    /* First Fibonacci Function */
+    result_1 = fibonacci(n);
+
+    /* Second Fibonacci Function */
+    result_vector = fibonacci_vector(n);
+
+    long long int sum = 0;
+    long long int value = 0;
+    for (int k = 0; k < n; k++)
+    {
+        value = result_vector[k];
+        if (value % 2 == 0 && value < FOUR_MILLIONS)
+        {
+            sum += value;
+            std::cout << "fibo [" << k << "] = " << value << std::endl;
+        }
+    }
+
+
+    /* Display of results */
+    std::cout << "Result 1 : " << result_1 << std::endl;
+    std::cout << "Result 2 : " << result_vector[n-1] << std::endl;
+    std::cout << "Result of the problem 2 : " << sum << std::endl;
 
     return 0;
 }
