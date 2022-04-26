@@ -94,7 +94,7 @@ int main (int argc, char *argv[])
     auto end = std::chrono::steady_clock::now();
     auto cpt_1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
 
-    /* First method */
+    /* Second method */
     start = std::chrono::steady_clock::now();
     sum_2 = second_method(n);
     end = std::chrono::steady_clock::now();
