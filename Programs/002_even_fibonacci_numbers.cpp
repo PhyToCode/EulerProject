@@ -82,8 +82,8 @@ int main (int argc, char *argv[])
 
 
     /* Display of results */
-    std::cout << "Result 1 : " << result_1 << std::endl;
-    std::cout << "Result 2 : " << result_vector[n-1] << std::endl;
+    std::cout << "Result of Fibonacci(" << n << ") using Method 1 : " << result_1 << std::endl;
+    std::cout << "Result of Fibonacci(" << n << ") using Method 2 : " << result_vector[n-1] << std::endl;
     std::cout << "Result of the problem 2 : " << sum << std::endl;
 
     return 0;
