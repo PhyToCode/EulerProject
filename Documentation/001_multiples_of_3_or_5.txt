@@ -29,5 +29,4 @@ Documentation about Problem 1 : Multiples of 3 or 5
 
 # Commands 
 
-Compilation : g++ 001_multiples_of_3_or_5.cpp -o 001_multiples_of_3_or_5
-Execution : ./001_multiples_of_3_or_5 1000
+Execution : EulerProject/build/Programs$ ./001_multiples_of_3_or_5 1000
