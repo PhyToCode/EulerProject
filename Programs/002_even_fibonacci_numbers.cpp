@@ -76,7 +76,6 @@ int main (int argc, char *argv[])
         if (value % 2 == 0 && value < FOUR_MILLIONS)
         {
             sum += value;
-            std::cout << "fibo [" << k << "] = " << value << std::endl;
         }
     }
 
