@@ -33,7 +33,7 @@ long long int fibonacci (int n)
     return fnp1;
 }
 
-std::vector<long long int> fibonacci_vector (int n)
+std::vector<long long int> fibonacciVector (int n)
 {
     std::vector<long long int> fibo = {0, 1, 1};
     int size;
@@ -66,7 +66,7 @@ int main (int argc, char *argv[])
     result_1 = fibonacci(n);
 
     /* Second Fibonacci Function */
-    result_vector = fibonacci_vector(n);
+    result_vector = fibonacciVector(n);
 
     long long int sum = 0;
     long long int value = 0;

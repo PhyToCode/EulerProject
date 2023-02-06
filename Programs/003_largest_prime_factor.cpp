@@ -13,7 +13,7 @@
 
 #define TEN_THOUSAND 10000
 
-bool is_prime_factor(long int m)
+bool isPrimeFactor(long int m)
 {
     bool result = true;
 
@@ -47,7 +47,7 @@ int main (int argc, char *argv[])
     /* Recovery of the first prime factors */
     for (long int k = 3; k < TEN_THOUSAND; k++)
     {
-        pf = is_prime_factor(k);
+        pf = isPrimeFactor(k);
         if (pf == true)
             prime_factor_vector.push_back(k);
     }

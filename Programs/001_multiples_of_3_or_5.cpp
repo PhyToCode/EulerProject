@@ -17,7 +17,7 @@
 #define FIFTEEN 15
 #define THIRTY  30
 
-int sum_of_multiples_of_m_below_n(const int m, const int n)
+int sumOfMultiplesOfMBelowN(const int m, const int n)
 {
     int sum = 0;
     for (int k = m; k < n; k+=m)
@@ -29,18 +29,18 @@ int sum_of_multiples_of_m_below_n(const int m, const int n)
 }
 
 //> First Method : sum multiples of 3 and 5 minus multiples of 3*5 = 15
-int first_method(const int n)
+int firstMethod(const int n)
 {
     int sum = 0;
-    sum += sum_of_multiples_of_m_below_n(THREE, n);
-    sum += sum_of_multiples_of_m_below_n(FIVE, n);
-    sum -= sum_of_multiples_of_m_below_n(FIFTEEN, n);
+    sum += sumOfMultiplesOfMBelowN(THREE, n);
+    sum += sumOfMultiplesOfMBelowN(FIVE, n);
+    sum -= sumOfMultiplesOfMBelowN(FIFTEEN, n);
 
     return sum;
 }
 
 //> Second Method : the pattern
-int second_method(const int n)
+int secondMethod(const int n)
 {
     int sum_1 = 0;
     int sum_2 = 0;
@@ -90,13 +90,13 @@ int main (int argc, char *argv[])
 
     /* First method */
     auto start = std::chrono::steady_clock::now();
-    sum_1 = first_method(n);
+    sum_1 = firstMethod(n);
     auto end = std::chrono::steady_clock::now();
     auto cpt_1 = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
 
     /* Second method */
     start = std::chrono::steady_clock::now();
-    sum_2 = second_method(n);
+    sum_2 = secondMethod(n);
     end = std::chrono::steady_clock::now();
     auto cpt_2 = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
   

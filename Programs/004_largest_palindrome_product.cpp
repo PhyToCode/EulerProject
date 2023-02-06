@@ -12,7 +12,7 @@
 #include <algorithm>
 #include <cmath>
 
-bool check_palindrome(int nb)
+bool checkPalindrome(int nb)
 {
     int reverse = 0; // reverse of the nb number 
     int temp = nb;   // temporary value
@@ -46,7 +46,7 @@ int main (int argc, char *argv[])
         for (int i = max_range; i > min_range; i--)
         {
             product = k*i;
-            if (check_palindrome(product) == 1)
+            if (checkPalindrome(product) == 1)
             {
                 palindrom_vector.push_back(product);
             }
