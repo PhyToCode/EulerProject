@@ -18,6 +18,7 @@ set(programs_exe
     001_multiples_of_3_or_5
     002_even_fibonacci_numbers
     003_largest_prime_factor
+    004_largest_palindrome_product
 )
 
 # Generic target
