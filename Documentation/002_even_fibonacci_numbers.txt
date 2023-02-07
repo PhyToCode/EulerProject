@@ -2,7 +2,7 @@ Documentation about Problem 2 : Even Fibonacci numbers
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 

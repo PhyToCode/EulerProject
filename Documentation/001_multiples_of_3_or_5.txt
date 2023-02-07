@@ -2,7 +2,7 @@ Documentation about Problem 1 : Multiples of 3 or 5
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 

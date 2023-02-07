@@ -2,7 +2,7 @@ Documentation about Problem 5 : Smallest multiple
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 

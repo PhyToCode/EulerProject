@@ -2,7 +2,7 @@ Documentation about Problem 3 : Largest prime factor
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 

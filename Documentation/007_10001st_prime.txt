@@ -2,7 +2,7 @@ Documentation about Problem 7 : 10001st prime
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 

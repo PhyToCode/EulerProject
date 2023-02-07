@@ -2,7 +2,7 @@ Documentation about Problem 6 : Sum square difference
 
 # Explanation [EN]
 
-    In comming
+    In coming
 
 # Explication [FR]
 
