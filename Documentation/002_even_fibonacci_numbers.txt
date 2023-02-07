@@ -6,8 +6,21 @@ Documentation about Problem 2 : Even Fibonacci numbers
 
 # Explication [FR]
 
+Pour implémenter de manière efficace la suite de fibonacci, il faut évidemment la coder de manière itérative et non récursive,
+sinon la mémoire risque d'être très vite saturée.
+Pour calculer la n-ième valeur de la suite de fibonacci, il nous faut simplement avoir stocké au préalable la (n-1)-ième et la (n-2)-ième valeur de la suite.
+Donc pour calculer la n-ième valeur de fibonacci, on fait grossomodo n additions.
 
+Ensuite, dans le cas de l'exercice, nous devons additionner tous les termes pairs de la suite de fibonacci qui n'excèdent pas 4 millions.
+Il nous suffit de stocker dans un vecteur, les valeurs de la suite de fibonnaci, puis d'additionner entre elles celles qui sont paires.
+
+Attention, dans le code de ce problème, on demande à l'utilisateur de donner une valeur n pour calculer la n-ième valeur de fibonnaci.
+J'ai fait cela dans l'idée de pouvoir utiliser ce programme pour calculer n'importe quelle valeur de la suite de fibonnaci.
+Pour obtenir la réponse au problème 2, il faut simplement donner une valeur assez grande pour que le programme nous renvoit la bonne réponse
+au problème 2.
+C'est pas très joli, j'accorderai une retouche à ce programme quand je séparerai l'algorithme de la suite de fibonnaci et l'algorithme calculant
+la somme des valeurs paires de la suite de fibonnaci. (Nous pourrions imaginer en entrée de ce programme que l'utilisateur ait le choix entre les 2)
 
 # Commands 
 
-Execution : EulerProject/build/Programs$ ./002_even_fibonacci_numbers
+Execution : EulerProject/build/Programs$ ./002_even_fibonacci_numbers n
