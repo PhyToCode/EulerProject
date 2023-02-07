@@ -1,0 +1,13 @@
+Documentation about Problem 7 : 10001st prime
+
+# Explanation [EN]
+
+    In comming
+
+# Explication [FR]
+
+
+
+# Commands 
+
+Execution : EulerProject/build/Programs$ ./007_10001st_prime

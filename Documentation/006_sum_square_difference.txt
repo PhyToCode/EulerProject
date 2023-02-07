@@ -1,0 +1,13 @@
+Documentation about Problem 6 : Sum square difference
+
+# Explanation [EN]
+
+    In comming
+
+# Explication [FR]
+
+
+
+# Commands 
+
+Execution : EulerProject/build/Programs$ ./006_sum_square_difference

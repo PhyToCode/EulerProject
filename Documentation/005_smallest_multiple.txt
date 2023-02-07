@@ -1,0 +1,13 @@
+Documentation about Problem 5 : Smallest multiple
+
+# Explanation [EN]
+
+    In comming
+
+# Explication [FR]
+
+
+
+# Commands 
+
+Execution : EulerProject/build/Programs$ ./005_smallest_multiple
