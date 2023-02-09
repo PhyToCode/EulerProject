@@ -52,7 +52,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 2)
     {
-        std::cout << "Usage : ./002_even_fibonacci_numbers n" << std::endl;
+        std::cerr << "Usage : ./002_even_fibonacci_numbers n" << std::endl;
         return -1;
     }
 

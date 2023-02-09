@@ -29,7 +29,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 2)
     {
-        std::cout << "Usage : ./004_largest_palindrome_product digits" << std::endl;
+        std::cerr << "Usage : ./004_largest_palindrome_product digits" << std::endl;
         return -1;
     }
 

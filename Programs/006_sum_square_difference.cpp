@@ -23,7 +23,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 1)
     {
-        std::cout << "Usage : ./006_sum_square_difference" << std::endl;
+        std::cerr << "Usage : ./006_sum_square_difference" << std::endl;
         return -1;
     }
 

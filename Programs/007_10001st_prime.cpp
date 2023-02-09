@@ -14,7 +14,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 1)
     {
-        std::cout << "Usage : ./007_10001st_prime" << std::endl;
+        std::cerr << "Usage : ./007_10001st_prime" << std::endl;
         return -1;
     }
 

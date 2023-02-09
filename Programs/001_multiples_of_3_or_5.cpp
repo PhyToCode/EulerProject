@@ -78,7 +78,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 2)
     {
-        std::cout << "Usage : ./001_multiples_of_3_or_5 n" << std::endl;
+        std::cerr << "Usage : ./001_multiples_of_3_or_5 n" << std::endl;
         return -1;
     }
 

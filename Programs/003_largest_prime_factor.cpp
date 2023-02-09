@@ -32,7 +32,7 @@ int main (int argc, char *argv[])
     /* Input processing */
     if (argc != 2)
     {
-        std::cout << "Usage : ./003_largest_prime_factor n" << std::endl;
+        std::cerr << "Usage : ./003_largest_prime_factor n" << std::endl;
         return -1;
     }
 
