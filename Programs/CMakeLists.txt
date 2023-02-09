@@ -20,6 +20,7 @@ set(programs_exe
     003_largest_prime_factor
     004_largest_palindrome_product
     005_smallest_multiple
+    006_sum_square_difference
 )
 
 # Generic target
