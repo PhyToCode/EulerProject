@@ -17,6 +17,34 @@
 *******************************************************************************/
 
 #include <iostream>
+#include <vector>
+#include <cmath>
+
+/* Compute the sum of the squares of several integer values */
+int sumOfSquares(std::vector<int> numbers)
+{
+    int sum = 0;
+    for (int k = 0; k < numbers.size(); k++)
+    {
+        sum += pow(numbers[k], 2);
+    }
+
+    return sum;
+}
+
+/* Compute square of the sum of several integer values */
+int squareOfSum(std::vector<int> numbers)
+{
+    int sum = 0;
+    for (int k = 0; k < numbers.size(); k++)
+    {
+        sum += numbers[k];
+    }
+
+    sum *= sum;
+
+    return sum;
+}
 
 int main (int argc, char *argv[])
 {
@@ -27,8 +55,15 @@ int main (int argc, char *argv[])
         return -1;
     }
 
+    std::vector<int> hundred;
+
+    for (int k = 1; k < 101; k++)
+    {
+        hundred.push_back(k);
+    }
+
     /* Display of results */
-    std::cout << "Result of Problem 6 : " << std::endl;
+    std::cout << "Result of Problem 6 : " << abs(sumOfSquares(hundred) - squareOfSum(hundred)) << std::endl;
 
     return 0;
 }
