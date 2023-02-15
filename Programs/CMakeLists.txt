@@ -1,7 +1,7 @@
 # Macro to add quickly simple executables
 function(add_programs_exe)
     if(ARGC LESS_EQUAL 0)
-        message(FATAL_ERROR "Macro add_scotch_exe requires arguments")
+        message(FATAL_ERROR "Macro add_programs_exe requires arguments")
     endif()
     set(file ${ARGV0})
     if (ARGC GREATER_EQUAL 2)
@@ -21,6 +21,7 @@ set(programs_exe
     004_largest_palindrome_product
     005_smallest_multiple
     006_sum_square_difference
+    007_10001st_prime
 )
 
 # Generic target
