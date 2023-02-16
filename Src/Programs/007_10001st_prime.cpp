@@ -7,8 +7,7 @@
 * What is the 10 001st prime number?                                           *
 *******************************************************************************/
 
-#include<iostream>
-#include<vector>
+#include <eulermaths.h>
 
 bool isPrimeFactor(long int m)
 {
@@ -32,7 +31,7 @@ int main (int argc, char *argv[])
         return -1;
     }
 
-    const long int n = atol(argv[1]);
+    const long unsigned int n = atol(argv[1]);
 
     std::vector<long int> prime_factor_vector = {2};
     bool pf;

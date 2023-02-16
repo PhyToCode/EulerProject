@@ -7,10 +7,7 @@
 * Find the largest palindrome made from the product of two 3-digit numbers.    *
 *******************************************************************************/
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
+#include <eulermaths.h>
 
 bool checkPalindrome(int nb)
 {

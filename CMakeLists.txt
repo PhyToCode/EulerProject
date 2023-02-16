@@ -4,13 +4,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-# name of the project
-project(EulerProject)
+project(EulerProject VERSION 1.0)
+enable_language(CXX)
 
-# include subdirectories
-add_subdirectory(Programs)
-
-# default build type
-if (NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE "RelWithDebInfo")
-endif()
+add_subdirectory(Src)

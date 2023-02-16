@@ -7,10 +7,7 @@
 * Find the sum of all the multiples of 3 or 5 below 1000.                      *
 *******************************************************************************/
 
-#include <iostream>
-#include <chrono>
-#include <cstdlib>
-#include <vector>
+#include <eulermaths.h>
 
 #define THREE   3
 #define FIVE    5

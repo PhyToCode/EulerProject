@@ -16,15 +16,13 @@
 * natural numbers and the square of the sum.                                   *
 *******************************************************************************/
 
-#include <iostream>
-#include <vector>
-#include <cmath>
+#include <eulermaths.h>
 
 /* Compute the sum of the squares of several integer values */
 int sumOfSquares(std::vector<int> numbers)
 {
     int sum = 0;
-    for (int k = 0; k < numbers.size(); k++)
+    for (long unsigned int k = 0; k < numbers.size(); k++)
     {
         sum += pow(numbers[k], 2);
     }
@@ -36,7 +34,7 @@ int sumOfSquares(std::vector<int> numbers)
 int squareOfSum(std::vector<int> numbers)
 {
     int sum = 0;
-    for (int k = 0; k < numbers.size(); k++)
+    for (long unsigned int k = 0; k < numbers.size(); k++)
     {
         sum += numbers[k];
     }

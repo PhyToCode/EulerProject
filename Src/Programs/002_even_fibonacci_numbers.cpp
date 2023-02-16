@@ -10,10 +10,7 @@
 * exceed four million, find the sum of the even-valued terms.                  *
 *******************************************************************************/
 
-#include <iostream>
-#include <chrono>
-#include <cstdlib>
-#include <vector>
+#include <eulermaths.h>
 
 #define FOUR_MILLIONS 4000000
 

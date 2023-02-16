@@ -11,6 +11,8 @@ function(add_programs_exe)
         set(src_exe ${file}.cpp)
     endif()
     add_executable(${file} ${src_exe})
+    target_link_libraries(${file} PUBLIC ${EXTRA_LIBS} euler_compiler_flags)
+    target_include_directories(${file} PUBLIC "${PROJECT_BINARY_DIR}")
 endfunction(add_programs_exe)
 
 # Programs executables (one exercice = one executable)

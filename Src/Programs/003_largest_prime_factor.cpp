@@ -6,10 +6,7 @@
 * What is the largest prime factor of the number 600851475143 ?                *
 *******************************************************************************/
 
-#include <iostream>
-#include <chrono>
-#include <cstdlib>
-#include <vector>
+#include <eulermaths.h>
 
 #define TEN_THOUSAND 10000
 

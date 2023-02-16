@@ -8,13 +8,7 @@
 * numbers from 1 to 20?                                                        *
 *******************************************************************************/
 
-#include <iostream>
-#include <vector>
-#include <map>
-#include <cmath>
-#include <algorithm>
-#include <sstream>
-#include <iterator>
+#include <eulermaths.h>
 
 /* Compute the prime factor decomposition of an integer value */
 std::map<int,int> primeFactorDecomposition(int value)
