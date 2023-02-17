@@ -47,7 +47,7 @@ int main (int argc, char *argv[])
     }
 
     /* Display of results */
-    std::cout << "Result of Problem 7 : " << prime_factor_vector.back() << std::endl;
+    std::cout << "The " << n << "st prime number is " << prime_factor_vector.back() << std::endl;
 
     return 0;
 }
