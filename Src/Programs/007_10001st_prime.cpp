@@ -31,7 +31,7 @@ int main (int argc, char *argv[])
         return -1;
     }
 
-    const long unsigned int n = atol(argv[1]);
+    const long unsigned int n = std::stol(argv[1]);
 
     std::vector<long int> prime_factor_vector = {2};
     bool pf;

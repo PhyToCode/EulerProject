@@ -30,7 +30,7 @@ int main (int argc, char *argv[])
         return -1;
     }
 
-    int digits = atoi(argv[1]);
+    int digits = std::stoi(argv[1]);
     std::vector<int> palindrom_vector;
     int product;
 

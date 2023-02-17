@@ -79,7 +79,7 @@ int main (int argc, char *argv[])
         return -1;
     }
 
-    const int n = atoi(argv[1]);
+    const int n = std::stoi(argv[1]);
 
     /* Variable declaration */
     int sum_1 = 0;
