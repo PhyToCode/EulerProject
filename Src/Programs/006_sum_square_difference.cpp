@@ -47,21 +47,25 @@ int squareOfSum(std::vector<int> numbers)
 int main (int argc, char *argv[])
 {
     /* Input processing */
-    if (argc != 1)
+    if (argc != 2)
     {
-        std::cerr << "Usage : ./006_sum_square_difference" << std::endl;
+        std::cerr << "Usage : ./006_sum_square_difference n" << std::endl;
         return -1;
     }
 
-    std::vector<int> hundred;
+    const int N = std::stoi(argv[1]);
 
-    for (int k = 1; k < 101; k++)
+    std::vector<int> vector_from1_toN;
+
+    for (int k = 1; k < N+1; k++)
     {
-        hundred.push_back(k);
+        vector_from1_toN.push_back(k);
     }
 
     /* Display of results */
-    std::cout << "Result of Problem 6 : " << abs(sumOfSquares(hundred) - squareOfSum(hundred)) << std::endl;
+    std::cout << "The difference between the sum of the squares of the first " << N;
+    std::cout << " natural numbers and the square of the sum is ";
+    std::cout << abs(sumOfSquares(vector_from1_toN) - squareOfSum(vector_from1_toN)) << std::endl;
 
     return 0;
 }
