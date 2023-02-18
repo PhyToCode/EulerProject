@@ -24,6 +24,7 @@ set(programs_exe
     005_smallest_multiple
     006_sum_square_difference
     007_10001st_prime
+    008_largest_product_in_a_series
 )
 
 # Generic target
