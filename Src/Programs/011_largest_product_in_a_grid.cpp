@@ -41,7 +41,7 @@ int main (int argc, char *argv[])
 
     const int adjacent_nb_size = std::stoi(argv[1]);
 
-    if (adjacent_nb_size < 2 || adjacent_nb_size > 14)
+    if (adjacent_nb_size < 2 || adjacent_nb_size > 10)
     {
         std::cerr << "n must be in the range of 2 to 10" << std::endl;
         return -1;
