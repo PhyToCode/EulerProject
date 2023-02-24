@@ -25,6 +25,7 @@ set(programs_exe
     006_sum_square_difference
     007_10001st_prime
     008_largest_product_in_a_series
+    011_largest_product_in_a_grid
 )
 
 # Generic target
