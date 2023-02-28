@@ -1,4 +1,9 @@
-add_library(EulerMaths eulermaths.h)
+set(EULERMATHS_CXX_SOURCES
+eulermaths.h
+prime_factor.cpp
+prime_factor.h)
+
+add_library(EulerMaths ${EULERMATHS_CXX_SOURCES})
 
 # state that anybody linking to us needs to include the current source dir
 # to find MathFunctions.h, while we don't.
