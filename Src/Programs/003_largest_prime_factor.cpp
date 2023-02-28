@@ -7,21 +7,9 @@
 *******************************************************************************/
 
 #include <eulermaths.h>
+#include <prime_factor.h>
 
 #define TEN_THOUSAND 10000
-
-bool isPrimeFactor(long int m)
-{
-    bool result = true;
-
-    for (long int k = 2; k < m; k++)
-    {
-        if (m % k == 0)
-            result = false;
-    }
-
-    return result;
-}
 
 int main (int argc, char *argv[])
 {
@@ -65,7 +53,7 @@ int main (int argc, char *argv[])
     }
 
     /* Display of results */
-    std::cout << "Result of Problem 3 : " << decomposition.back() << std::endl; 
+    std::cout << "The largest prime factor of the number " << n << " is " << decomposition.back() << std::endl;
 
     return 0;
 }

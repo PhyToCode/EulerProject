@@ -8,19 +8,7 @@
 *******************************************************************************/
 
 #include <eulermaths.h>
-
-bool isPrimeFactor(long int m)
-{
-    bool result = true;
-
-    for (long int k = 2; k < m; k++)
-    {
-        if (m % k == 0)
-            result = false;
-    }
-
-    return result;
-}
+#include <prime_factor.h>
 
 int main (int argc, char *argv[])
 {

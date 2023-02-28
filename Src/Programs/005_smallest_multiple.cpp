@@ -9,31 +9,7 @@
 *******************************************************************************/
 
 #include <eulermaths.h>
-
-/* Compute the prime factor decomposition of an integer value */
-std::map<int,int> primeFactorDecomposition(int value)
-{
-    std::map<int,int> prime_factors;
-    int k = 2;
-    int exponent;
-
-    while (value != 1)
-    {
-        exponent = 0;
-        while (value % k == 0)
-        {
-            value = value / k;
-            exponent += 1;
-        }
-        if (exponent != 0)
-        {
-            prime_factors[k] = exponent;
-        }
-        k++;
-    }
-
-    return prime_factors;
-}
+#include <prime_factor.h>
 
 /* Compute the least commun multiple of 2 integer values */
 int lcm(int a, int b)
