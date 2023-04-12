@@ -25,8 +25,10 @@ set(programs_exe
     006_sum_square_difference
     007_10001st_prime
     008_largest_product_in_a_series
+    009_special_pythagorean_triplet
     010_summation_of_primes
     011_largest_product_in_a_grid
+    060_prime_pair_sets
 )
 
 # Generic target
