@@ -28,6 +28,7 @@ set(programs_exe
     009_special_pythagorean_triplet
     010_summation_of_primes
     011_largest_product_in_a_grid
+    037_truncatable_primes
     060_prime_pair_sets
 )
 
